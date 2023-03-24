@@ -3,5 +3,9 @@
 }
 
 .textColor{
-    @apply text-[#b8b8b8] text-[1.5rem]
+    @apply text-[#b8b8b8] lg:text-[1.5rem]
+}
+
+.result{
+    @apply text-6xl font-[700]
 }
