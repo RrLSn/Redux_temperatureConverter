@@ -6,21 +6,13 @@ const ConverterCard = () => {
     const [result, setResult] = useState(0)
     const [temp, setTemp] = useState('')
 
-    // const handleInputChange = (e) => {
-    //     setInput(e.target.value)
-    // }
-
-    const handleTemp = (e) => {
-        setTemp(e.target.value)
-    }
+    const Celsuis = (input + 9/5) + 32 + "°C"
+    const Fahrenheit = ((input-32) * 5/9) + "°F"
 
     const handleClick = (e) => {
         e.preventDefault();
-        setResult(`${temp === 'celsius'?((input + 9/5) + 32 + "°C"):((input-32) * 5/9 + "°F")}`)
+        setResult(`${temp === 'celsius'?Celsuis:Fahrenheit}`)
     }
-    console.log(temp)
-    console.log(result)
-
 
   return (
     <div className='lg:w-[80vw] w-[90vw] lg:h-[50vh] h-[150vh] m-[auto] rounded-2xl bg-[#f3f6fa] lg:flex lg:place-items-center lg:p-0 p-[2rem]'>
