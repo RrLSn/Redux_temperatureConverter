@@ -1,0 +1,7 @@
+*{
+    @apply p-0 m-0 box-border
+}
+
+.textColor{
+    @apply text-[#b8b8b8] text-[1.5rem]
+}
