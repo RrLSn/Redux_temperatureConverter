@@ -7,5 +7,9 @@
 }
 
 .result{
-    @apply text-6xl font-[700]
+    @apply lg:text-6xl lg:font-[700] text-[1rem] font-[400]
+}
+
+section{
+    @apply mb-[1rem]
 }
